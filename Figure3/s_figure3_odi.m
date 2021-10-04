@@ -1,4 +1,4 @@
-function s_figure2_odi
+function s_figure3_odi
 %This code aims to reproduce right upper panel of Figure 2 in the following paper.
 
 % Ogawa, S., Takemura, H., Horiguchi, H., Miyazaki, A., Matsumoto, K., Masuda, Y., Yoshikawa, K. & Nakano, T. (2021) Multi-contrast magnetic resonance imaging of visual white matter pathways in glaucoma patients. medRxiv, 2021.06.29.21259608 (*: equal contribution)
@@ -58,7 +58,7 @@ A4 = area(control_mean-2*control_std); hold on;
 % set color and style
 set(A1,'FaceColor',[0.6 0.6 0.6],'linestyle','none');
 set(A2,'FaceColor',[0.8 0.8 0.8],'linestyle','none');
-set(A3,'FaceColor',[0.8 0.8 0.8],'linestyle','none')
+set(A3,'FaceColor',[0.8 0.8 0.8],'linestyle','none');
 set(A4,'FaceColor',[1 1 1],'linestyle','none');
 
 for kk = 1:17
