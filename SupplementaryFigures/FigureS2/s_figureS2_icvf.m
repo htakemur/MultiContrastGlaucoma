@@ -1,14 +1,14 @@
-function s_figureS1_icvf
+function s_figureS2_icvf
 
-%This code aims to reproduce left lower panel of Supplementary Figure 1 in the following paper.
+%This code aims to reproduce left lower panel of Supplementary Figure 2 in the following paper.
 
 % Ogawa, S., Takemura, H., Horiguchi, H., Miyazaki, A., Matsumoto, K., Masuda, Y., Yoshikawa, K. & Nakano, T. (2021) Multi-contrast magnetic resonance imaging of visual white matter pathways in glaucoma patients. medRxiv, 2021.06.29.21259608 (*: equal contribution)
 
 % Author: Hiromasa Takemura, National Institute for Physiological Sciences, Japan
-% First version: 09/30/2021
+% First version: 10/05/2021
 
 % Load Data
-load ../../Data/LOT_tissueproperty.mat
+load ../../Data/LOR_tissueproperty.mat
 
 for k = 1:47
     if k < 31
@@ -18,7 +18,7 @@ for k = 1:47
     end
 end
 
-load ../../Data/ROT_tissueproperty.mat
+load ../../Data/ROR_tissueproperty.mat
 
 for k = 1:47
     if k < 31
@@ -86,7 +86,13 @@ set(A1,'FaceColor',[0.6 0.6 0.6],'linestyle','none');
 set(A2,'FaceColor',[0.8 0.8 0.8],'linestyle','none');
 set(A3,'FaceColor',[0.8 0.8 0.8],'linestyle','none');
 set(A4,'FaceColor',[1 1 1],'linestyle','none');
+% add avarage
+%plot(m,'color',[0 0 0], 'linewidth',3 )
 
+%for j = 1:19
+%   plot([21:1:80],icvf_control_avg(:,j),'color',[0.8 0.8 0.8],'LineWidth',0.5);
+%   hold on
+%end
 for kk = 1:17
      plot([1:1:80],icvf_glaucoma_avg(:,kk),'color',[0 0 1],'LineWidth',0.5);
      hold on
@@ -98,14 +104,23 @@ hold on
 plot([1:1:80],control_mean,'k','LineWidth',5)
 hold on
 
-h1.ylim(1) = -0.3;
-h1.ylim(2) = 0.3;
+%keyboard
+%plot([21:1:80],glaucoma_mean+glaucoma_ser,'--b','LineWidth',2)
+%hold on
+%plot([21:1:80],glaucoma_mean-glaucoma_ser,'--b','LineWidth',2)
+%hold on
+%plot([21:1:80],control_mean+control_ser,'--k','LineWidth',2)
+%hold on
+%plot([21:1:80],control_mean-control_ser,'--k','LineWidth',2)
+h1.ylim(1) = -0.2;
+h1.ylim(2) = 0.2;
 
-ytick = [-0.3 0 0.3];
+ytick = [-0.2 0 0.2];
 
     set(gca,'tickdir','out', ...
         'box','off', ...
         'ylim',h1.ylim,'ytick',ytick)
+
 
 ylabel('Residual ICVF','fontsize',16);
 xlabel('Position','fontsize',16);

@@ -1,6 +1,6 @@
-function s_figureS1_isov
+function s_figureS2_isov
 
-%This code aims to reproduce right lower panel of Supplementary Figure 1 in the following paper.
+%This code aims to reproduce right lower panel of Supplementary Figure 2 in the following paper.
 
 % Ogawa, S., Takemura, H., Horiguchi, H., Miyazaki, A., Matsumoto, K., Masuda, Y., Yoshikawa, K. & Nakano, T. (2021) Multi-contrast magnetic resonance imaging of visual white matter pathways in glaucoma patients. medRxiv, 2021.06.29.21259608 (*: equal contribution)
 
@@ -8,7 +8,7 @@ function s_figureS1_isov
 % First version: 10/05/2021
 
 % Load Data
-load ../../Data/LOT_tissueproperty.mat
+load ../../Data/LOR_tissueproperty.mat
 
 for k = 1:47
     if k < 31
@@ -18,7 +18,7 @@ for k = 1:47
     end
 end
 
-load ../../Data/ROT_tissueproperty.mat
+load ../../Data/ROR_tissueproperty.mat
 
 for k = 1:47
     if k < 31
@@ -97,14 +97,14 @@ hold on
 plot([1:1:80],control_mean,'k','LineWidth',5)
 hold on
 
-h1.ylim(1) = -0.3;
-h1.ylim(2) = 0.3;
-
-ytick = [-0.3 0 0.3];
+h1.ylim(1) = -0.1;
+h1.ylim(2) = 0.1;
+ytick = [-0.1 0 0.1];
 
     set(gca,'tickdir','out', ...
         'box','off', ...
         'ylim',h1.ylim,'ytick',ytick)
+
 ylabel('Residual ISoV','fontsize',16);
 xlabel('Position','fontsize',16);
 titletext = ['OT dprime = ', num2str(dprime)];

@@ -1,6 +1,6 @@
-function s_figureS1_qT1
+function s_figureS2_qT1
 
-%This code aims to reproduce left upper panel of Supplementary Figure 1 in the following paper.
+%This code aims to reproduce left upper panel of Supplementary Figure 2 in the following paper.
 
 % Ogawa, S., Takemura, H., Horiguchi, H., Miyazaki, A., Matsumoto, K., Masuda, Y., Yoshikawa, K. & Nakano, T. (2021) Multi-contrast magnetic resonance imaging of visual white matter pathways in glaucoma patients. medRxiv, 2021.06.29.21259608 (*: equal contribution)
 
@@ -8,7 +8,7 @@ function s_figureS1_qT1
 % First version: 09/30/2021
 
 % Load Data
-load ../../Data/LOT_tissueproperty.mat
+load ../../Data/LOR_tissueproperty.mat
 
 for k = 1:47
     if k < 31
@@ -18,7 +18,7 @@ for k = 1:47
     end
 end
 
-load ../../Data/ROT_tissueproperty.mat
+load ../../Data/ROR_tissueproperty.mat
 for k = 1:47
     if k < 31
         qt1_control_rh(:,k) = (all_profile_all.qt1_1(11:90,k) + all_profile_all.qt1_2(11:90,k))./2;
@@ -98,10 +98,10 @@ hold on
 plot([1:1:80],control_mean,'k','LineWidth',5)
 hold on
 
-h1.ylim(1) = -0.4;
-h1.ylim(2) = 0.4;
+h1.ylim(1) = -0.2;
+h1.ylim(2) = 0.2;
 
-ytick = [-0.4 0 0.4];
+ytick = [-0.2 0 0.2];
 
     set(gca,'tickdir','out', ...
         'box','off', ...
