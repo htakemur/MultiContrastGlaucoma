@@ -1,4 +1,4 @@
-function s_figure3F
+function s_figureS3F
 %This code aims to reproduce panel F of Supplementary Figure 3 in the following paper.
 
 % Ogawa, S., Takemura, H., Horiguchi, H., Miyazaki, A., Matsumoto, K., Masuda, Y., Yoshikawa, K. & Nakano, T. (2021) Multi-contrast magnetic resonance imaging of visual white matter pathways in glaucoma patients. medRxiv, 2021.06.29.21259608 (*: equal contribution)
