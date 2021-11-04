@@ -79,5 +79,5 @@ ytick = [0.2 0.3 0.4];
         'ylim',h1.ylim,'ytick',ytick)
 ylabel('MTV','fontsize',16);
 xlabel('Position','fontsize',16);
-titletext = ['OT dprime = ', num2str(dprime)];
+titletext = ['OR dprime = ', num2str(dprime)];
 title(titletext,'fontsize',16);
