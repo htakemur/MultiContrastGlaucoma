@@ -7,4 +7,5 @@ Ogawa, S., Takemura, H., Horiguchi, H., Miyazaki, A., Matsumoto, K., Masuda, Y.,
 The code was written in MATLAB2019a and tested on Ubuntu 14.04 LTS.
 
 Original Version released: January 13th, 2022
+
 Modified Version released: April 10th, 2024
