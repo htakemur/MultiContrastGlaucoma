@@ -2,11 +2,14 @@ function s_figureS1_odi
 
 %This code aims to reproduce right upper panel of Supplementary Figure 1 in the following paper.
 
-% Ogawa, S., Takemura, H., Horiguchi, H., Miyazaki, A., Matsumoto, K., Masuda, Y., Yoshikawa, K. & Nakano, T. (2022) Multi-contrast magnetic resonance imaging of visual white matter pathways in patients with glaucoma. Investigative Ophthalmology & Visual Science, 63, 29. 
+% Ogawa, S., Takemura, H., Horiguchi, H., Miyazaki, A., Matsumoto, K., Masuda, Y., Yoshikawa, K. & Nakano, T. (2022) 
+% Multi-contrast magnetic resonance imaging of visual white matter pathways in patients with glaucoma. 
+% Investigative Ophthalmology & Visual Science, 63, 29.
+% (*: equal contribution)
 
 % Author: Hiromasa Takemura, National Institute for Physiological Sciences, Japan
 % First version: 10/05/2021
-
+% Modifided the scale for corrected data: 03/27/2024
 
 % Load Data
 load ../../Data/LOT_tissueproperty.mat
@@ -99,7 +102,7 @@ plot([1:1:80],control_mean,'k','LineWidth',5)
 hold on
 
 h1.ylim(1) = -0.2;
-h1.ylim(2) = 0.2;
+h1.ylim(2) = 0.25;
 
 ytick = [-0.2 0 0.2];
 

@@ -2,7 +2,10 @@ function s_figureS2_isov
 
 %This code aims to reproduce right lower panel of Supplementary Figure 2 in the following paper.
 
-% Ogawa, S., Takemura, H., Horiguchi, H., Miyazaki, A., Matsumoto, K., Masuda, Y., Yoshikawa, K. & Nakano, T. (2022) Multi-contrast magnetic resonance imaging of visual white matter pathways in patients with glaucoma. Investigative Ophthalmology & Visual Science, 63, 29. 
+% Ogawa, S., Takemura, H., Horiguchi, H., Miyazaki, A., Matsumoto, K., Masuda, Y., Yoshikawa, K. & Nakano, T. (2022) 
+% Multi-contrast magnetic resonance imaging of visual white matter pathways in patients with glaucoma. 
+% Investigative Ophthalmology & Visual Science, 63, 29.
+% (*: equal contribution)
 
 % Author: Hiromasa Takemura, National Institute for Physiological Sciences, Japan
 % First version: 10/05/2021

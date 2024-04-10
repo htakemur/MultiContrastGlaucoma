@@ -2,7 +2,9 @@ function s_tableS2
 
 %This code aims to reproduce Supplementary Table 2 in the following paper.
 
-% Ogawa, S., Takemura, H., Horiguchi, H., Miyazaki, A., Matsumoto, K., Masuda, Y., Yoshikawa, K. & Nakano, T. (2022) Multi-contrast magnetic resonance imaging of visual white matter pathways in patients with glaucoma. Investigative Ophthalmology & Visual Science, 63, 29. 
+% Ogawa, S., Takemura, H., Horiguchi, H., Miyazaki, A., Matsumoto, K., Masuda, Y., Yoshikawa, K. & Nakano, T. (2022) 
+% Multi-contrast magnetic resonance imaging of visual white matter pathways in patients with glaucoma. 
+% Investigative Ophthalmology & Visual Science, 63, 29.
 
 % Author: Hiromasa Takemura, National Institute for Physiological Sciences, Japan
 % First version: 12/25/2021
@@ -42,5 +44,3 @@ control_mean_fiso = mean(all_profile_avg.fiso(11:90,1:30),1);
 [r(2,2)] = corr(transpose(control_mean_icvf), transpose(control_mean_odi));
 [r(2,3)] = corr(transpose(control_mean_icvf), transpose(control_mean_fiso));
 [r(3,3)] = corr(transpose(control_mean_odi), transpose(control_mean_fiso));
-
-keyboard
