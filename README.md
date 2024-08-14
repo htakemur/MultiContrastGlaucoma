@@ -9,3 +9,5 @@ The code was written in MATLAB2019a and tested on Ubuntu 14.04 LTS.
 Original Version released: January 13th, 2022
 
 Modified Version released: April 10th, 2024
+
+Modified version reflect the Erratum published in July 2024 (https://iovs.arvojournals.org/article.aspx?articleid=2800623).
